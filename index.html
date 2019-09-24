@@ -11,8 +11,8 @@
         <ul>
             <li><a href="#">Gmail</a></li>
             <li><a href="#">Images</a></li>
-            <li>*grid*</li>
-            <li>*PP*</li>
+            <li><a href="#"><img class="app-google" src="https://cdn1.iconfinder.com/data/icons/material-core/16/apps-512.png" alt="Applications Google"></a></li>
+            <li><a href="#"><img class="account-pp" src="https://icon-library.net/images/google-user-icon/google-user-icon-7.jpg" alt="Account"></a></li>
         </ul>
     </nav>
 </header>
@@ -36,11 +36,11 @@
 <footer class="footer">
 
     <div class="country-footer">
-        <p><a href="#">France</a></p>
+        <p class="country-text"><a href="#">France</a></p>
     </div>
-    <div>
+    <div class="footer-infos">
         <nav class="nav-footer-left">
-            <ul>
+            <ul class="nav-list-footer">
                 <li><a href="#">Publicité</a></li>
                 <li><a href="#">Entreprise</a> </li>
                 <li><a href="#">A propos</a></li>
@@ -48,7 +48,7 @@
             </ul>
         </nav>
         <nav class="nav-footer-right">
-            <ul>
+            <ul class="nav-list-footer">
                 <li><a href="#">Infos consomateurs</a></li>
                 <li><a href="#">Confidentialité</a></li>
                 <li><a href="#">Conditions</a></li>
@@ -60,16 +60,21 @@
 
 <style>
 
+    body {
+        font-family: Arial, sans-serif;
+    }
+
     .nav-footer-left {
         display: flex;
         justify-content: flex-start;
         position: absolute;
-
+        margin-left: 2vw;
     }
 
     .nav {
         display: flex;
         justify-content: flex-end;
+        margin-right: 1vw;
     }
 
     .nav-footer-right {
@@ -97,7 +102,7 @@
     }
 
     .logo-ggl {
-        margin-top: 18vh;
+        margin-top: 26vh;
         width: 272px;
     }
 
@@ -132,6 +137,7 @@
 
     .country-footer{
         border: 1px solid #e4e4e4;
+        height: 40px;
     }
 
     .m-glass {
@@ -164,6 +170,51 @@
         border-radius: 4px;
         cursor: pointer;
     }
+
+    .app-google {
+        width: 18px;
+        transform: translate(0%, 25%);
+        opacity: 0.5;
+    }
+
+    .app-google:hover{
+        opacity: 1;
+    }
+
+    .account-pp {
+        width: 30px;
+        transform: translate(0%, 30%);
+    }
+
+    header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 13px;
+        color: black;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .country-text {
+        margin-left: 38px;
+        margin-top: 1.4vh;
+    }
+
+    .footer-infos {
+        height: 40px;
+    }
+
+    .nav-list-footer {
+        margin-top: 1.4vh;
+    }
+
 
 </style>
 
